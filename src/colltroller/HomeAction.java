@@ -16,7 +16,7 @@ public class HomeAction extends Action{
 	@Override
 	public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
-		
+		//test git
 		// TODO Auto-generated method stub
 		return super.execute(mapping, form, request, response);
 	}
