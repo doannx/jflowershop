@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<!-- ================================================ Form Bean Definitions -->
+	<form-beans>
+		<!-- <form-bean name="homeForm" type="model.HomeActionForm"> <form-property 
+			name="txtID" type="java.lang.String" /> <form-property name="txtPass" type="java.lang.String" 
+			/> </form-bean> <form-bean name="addProduct" type="model.ProductForm"> <form-property 
+			name="txtName" type="java.lang.String"></form-property> <form-property name="txtPrice" 
+			type="java.lang.String"></form-property> <form-property name="txtQuantity" 
+			type="java.lang.String"></form-property> <form-property name="txtDescription" 
+			type="java.lang.String"></form-property> </form-bean> -->
+	</form-beans>
+
+
+	<!-- ========================================= Global Exception Definitions -->
+	<global-exceptions>
+	</global-exceptions>
+	<!-- =========================================== Global Forward Definitions -->
+	<global-forwards>
+	</global-forwards>
+	<!-- =========================================== Action Mapping Definitions -->
+	<action-mappings>
+
+		<action path="/init" type="colltroller.InitHomePrevAction">
+			<forward name="initsuccess" path="/pages/Home.jsp"></forward>
+		</action>
+
+		
+	</action-mappings>
+
+
+	<!-- ======================================== Message Resources Definitions -->
+	<message-resources parameter="MessageResources" />
+	<!-- =============================================== Plug Ins Configuration -->
+	<!-- ======================================================= Tiles plugin -->
+	<!-- =================================================== Validator plugin -->
+</struts-config>
+
