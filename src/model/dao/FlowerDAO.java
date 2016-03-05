@@ -34,7 +34,7 @@ public class FlowerDAO {
 	public static ArrayList<FlowerDTO> getByCategory(String categoryId) throws SQLException {
 		ArrayList<FlowerDTO> ketqua = new ArrayList<>();
 		Connection connection = DBConnection.getConnection();
-		String sql = "select name,description, image, price"
+		String sql = "select id, name,description, image, price"
 				+ " from flower as f inner join flowercategorydetail as d on f.id = d.flowerid " + "where d.categoryid="
 				+ categoryId + "";
 		PreparedStatement preStatement = connection.prepareStatement(sql);
