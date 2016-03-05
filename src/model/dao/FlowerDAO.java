@@ -40,12 +40,12 @@ public class FlowerDAO {
 		PreparedStatement preStatement = connection.prepareStatement(sql);
 		ResultSet re = preStatement.executeQuery();
 		while (re.next()) {
-			// String id = re.getString("id");
+			String id = re.getString("id");
 			String name = re.getString("name");
 			String description = re.getString("description");
 			String image = re.getString("image");
 			String price = re.getString("price");
-			FlowerDTO f = new FlowerDTO(null, name, description, image, price);
+			FlowerDTO f = new FlowerDTO(id, name, description, image, price);
 			ketqua.add(f);
 		}
 		return ketqua;
