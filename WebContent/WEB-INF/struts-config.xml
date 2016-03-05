@@ -30,7 +30,13 @@
 			<forward name="initsuccess" path="/pages/Home.jsp"></forward>
 		</action>
 
-		
+		<action path="/home" type="colltroller.HomeAction" input="/pages/Home.jsp">
+			<forward name="homesuccess" path="/pages/Home.jsp"></forward>
+		</action>
+
+		<action path="/flower" type="colltroller.FlowerAction" input="/pages/Home.jsp">
+			<forward name="flowerSuccess" path="/pages/FlowerDetail.jsp"></forward>
+		</action>
 	</action-mappings>
 
 

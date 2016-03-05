@@ -13,7 +13,6 @@ public class SettingDAO {
 		String sql = "select value from setting where id=?";
 		PreparedStatement preparedStatement = connection.prepareStatement(sql);
 		preparedStatement.setInt(1, id);
-		
 		ResultSet rs = preparedStatement.executeQuery();
 		rs.next();
 		return rs.getString("value");

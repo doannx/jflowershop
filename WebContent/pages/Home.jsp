@@ -84,19 +84,19 @@
 				<div class="col-xs-12">
 					<ul class="main-menu nav nav-justified">
 						<c:forEach var="category" items="${sessionScope.CATEGORY}">
-							<li><a href="" class="">${category.name}</a></li>
+							<li><a href="home.do?categoryid=${category.id}" class="">${category.name}</a></li>
 						</c:forEach>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- </br>
 	</br>
 	</br>
 	</br>
 	</br>
-	</br>
-	</br>
+	</br> -->
 
 	<%-- </br> FLOWER:
 	<br />
@@ -126,7 +126,7 @@
 									<div class="promotion-price">${flower.price}</div>
 								</div>
 								<div class="col-xs-6 text-right">
-									<a target="_blank" class="btn btn-primary btn-sm" href="#">Chi
+									<a target="_blank" class="" href="flower.do?flowerid=${flower.id}">Chi
 										tiết</a>
 								</div>
 							</div>
